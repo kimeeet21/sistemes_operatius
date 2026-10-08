@@ -1,0 +1,53 @@
+/* Estil Windows 95 fosc - compartit per tot el lloc */
+:root{--escriptori:#0a1f22;--gris:#2c2c32;--gris-fosc:#17171b;--text:#e4e4e4;--suau:#a0a0aa;--titol1:#1a2b6b;--titol2:#3a6ea5;--verd:#4ade80}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--escriptori);color:var(--text);font:14px/1.5 Tahoma,"MS Sans Serif",Verdana,sans-serif;padding:14px 12px 70px;
+background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:4px 4px}
+a{color:#7fc4ff}
+.pantalla{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+.finestra{background:var(--gris);border:2px solid;border-color:#6a6a74 #0a0a0c #0a0a0c #6a6a74;box-shadow:inset 1px 1px 0 #55555e,inset -1px -1px 0 #1d1d22,6px 6px 0 rgba(0,0,0,.45);padding:3px}
+.barra{display:flex;align-items:center;gap:6px;padding:3px 4px 3px 8px;color:#fff;font-weight:bold;background:linear-gradient(90deg,var(--titol1),var(--titol2))}
+.barra .nom{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.btn,.boto{background:var(--gris);color:var(--text);font:inherit;cursor:pointer;border:2px solid;border-color:#7a7a84 #0a0a0c #0a0a0c #7a7a84;box-shadow:inset -1px -1px 0 #1d1d22}
+.btn{width:20px;height:18px;padding:0;line-height:1;font-size:11px;font-weight:bold}
+.btn:active,.boto:active{border-color:#0a0a0c #7a7a84 #7a7a84 #0a0a0c;box-shadow:none}
+.boto{display:inline-block;padding:3px 14px;text-decoration:none;color:var(--text)}
+.cos{background:var(--gris-fosc);margin-top:3px;padding:16px 18px;border:2px solid;border-color:#0a0a0c #6a6a74 #6a6a74 #0a0a0c}
+.finestra.tancada .cos{display:none}
+.menu{display:flex;flex-wrap:wrap;gap:2px;padding:2px 4px}
+.menu a{color:var(--text);text-decoration:none;padding:1px 8px}
+.menu a:hover{background:var(--titol1);color:#fff}
+h1{margin:0 0 4px;font-size:22px;color:#fff}
+h2{margin:0 0 8px;font-size:15px;color:var(--verd)}
+p{margin:0 0 10px}
+code{font-family:"Courier New",monospace;background:#000;color:var(--verd);padding:1px 5px}
+.molla{color:var(--suau);font-size:12px}
+.aviso{color:#ffd166}
+.icones{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px}
+.icones.grans{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
+.icones a{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;color:var(--text);text-decoration:none;padding:8px 4px;font-size:12px;border:1px dotted transparent}
+.icones a:hover,.icones a:focus{background:rgba(58,110,165,.4);border-color:#7fc4ff;outline:none}
+.icones .gran{font-size:30px}
+.icones small{color:var(--suau)}
+.icones small.prox{color:#ffd166}
+.tria{display:flex;flex-wrap:wrap;gap:16px;margin:18px 0}
+.tria a{flex:1 1 200px;display:flex;flex-direction:column;align-items:center;gap:4px;padding:22px 10px;text-decoration:none;color:var(--text);background:var(--gris);border:2px solid;border-color:#7a7a84 #0a0a0c #0a0a0c #7a7a84;box-shadow:inset -1px -1px 0 #1d1d22}
+.tria a:hover{background:var(--titol1)}
+.tria a:active{border-color:#0a0a0c #7a7a84 #7a7a84 #0a0a0c}
+.tria .gegant{font-size:56px;line-height:1}
+.tria strong{font-size:18px}
+.tria small{color:var(--suau)}
+.llicencia{font-size:12px;color:var(--suau);border-top:1px dotted #55555e;padding-top:10px}
+.captures{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:12px}
+figure{margin:0}
+figure img{display:block;max-width:100%;border:2px solid;border-color:#0a0a0c #6a6a74 #6a6a74 #0a0a0c}
+figcaption{font-size:12px;color:var(--suau);margin-top:4px}
+figure.buit img{display:none}
+figure.buit::before{content:"Aquí va la captura:\A" attr(data-fitxer);white-space:pre;display:flex;align-items:center;justify-content:center;text-align:center;min-height:130px;padding:10px;color:var(--suau);font:12px "Courier New",monospace;border:2px dashed #55555e;background:repeating-linear-gradient(45deg,#1c1c22,#1c1c22 8px,#202028 8px,#202028 16px)}
+.tornar{font-size:12px;margin:12px 0 0}
+.tasques{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;gap:6px;background:var(--gris);border-top:2px solid #6a6a74;padding:4px 6px;z-index:10;overflow-x:auto}
+.tasques .inici{font-weight:bold}
+.tasques .rellotge{margin-left:auto;padding:3px 10px;font-size:12px;border:2px solid;border-color:#0a0a0c #6a6a74 #6a6a74 #0a0a0c}
+footer{font-size:12px;color:var(--suau);text-align:center}
+@media(max-width:560px){.cos{padding:12px}.tasques .boto{padding:3px 8px}}
