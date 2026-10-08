@@ -1,19 +1,19 @@
 /* Estil Windows 95 fosc - compartit per tot el lloc */
-:root{--escriptori:#0a1f22;--gris:#2c2c32;--gris-fosc:#17171b;--text:#e4e4e4;--suau:#a0a0aa;--titol1:#1a2b6b;--titol2:#3a6ea5;--verd:#4ade80}
+:root{--escriptori:#0b0614;--gris:#241a38;--gris-fosc:#120b1f;--text:#ece6f7;--suau:#a99cc4;--titol1:#5b21b6;--titol2:#2563eb;--verd:#c084fc}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--escriptori);color:var(--text);font:14px/1.5 Tahoma,"MS Sans Serif",Verdana,sans-serif;padding:14px 12px 70px;
-background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:4px 4px}
-a{color:#7fc4ff}
+body{margin:0;background:radial-gradient(ellipse at 15% 0%,rgba(124,58,237,.28),transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(37,99,235,.22),transparent 55%),var(--escriptori);color:var(--text);font:14px/1.5 Tahoma,"MS Sans Serif",Verdana,sans-serif;padding:14px 12px 70px;
+background-image:linear-gradient(rgba(192,132,252,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(192,132,252,.06) 1px,transparent 1px);background-size:4px 4px;background-attachment:fixed}
+a{color:#c4b5fd}
 .pantalla{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
-.finestra{background:var(--gris);border:2px solid;border-color:#6a6a74 #0a0a0c #0a0a0c #6a6a74;box-shadow:inset 1px 1px 0 #55555e,inset -1px -1px 0 #1d1d22,6px 6px 0 rgba(0,0,0,.45);padding:3px}
-.barra{display:flex;align-items:center;gap:6px;padding:3px 4px 3px 8px;color:#fff;font-weight:bold;background:linear-gradient(90deg,var(--titol1),var(--titol2))}
+.finestra{background:var(--gris);border:2px solid;border-color:#7c6aa8 #07040d #07040d #7c6aa8;box-shadow:inset 1px 1px 0 #4a3a70,inset -1px -1px 0 #150d24,6px 6px 0 rgba(0,0,0,.45);padding:3px}
+.barra{display:flex;align-items:center;gap:6px;padding:3px 4px 3px 8px;color:#fff;font-weight:bold;background:linear-gradient(90deg,#5b21b6,#a21caf,#2563eb,#a21caf,#5b21b6);background-size:300% 100%;animation:rgb 8s linear infinite;text-shadow:0 0 6px rgba(240,171,252,.7)}
 .barra .nom{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.btn,.boto{background:var(--gris);color:var(--text);font:inherit;cursor:pointer;border:2px solid;border-color:#7a7a84 #0a0a0c #0a0a0c #7a7a84;box-shadow:inset -1px -1px 0 #1d1d22}
+.btn,.boto{background:var(--gris);color:var(--text);font:inherit;cursor:pointer;border:2px solid;border-color:#8b78b8 #07040d #07040d #8b78b8;box-shadow:inset -1px -1px 0 #150d24}
 .btn{width:20px;height:18px;padding:0;line-height:1;font-size:11px;font-weight:bold}
-.btn:active,.boto:active{border-color:#0a0a0c #7a7a84 #7a7a84 #0a0a0c;box-shadow:none}
+.btn:active,.boto:active{border-color:#07040d #8b78b8 #8b78b8 #07040d;box-shadow:none}
 .boto{display:inline-block;padding:3px 14px;text-decoration:none;color:var(--text)}
-.cos{background:var(--gris-fosc);margin-top:3px;padding:16px 18px;border:2px solid;border-color:#0a0a0c #6a6a74 #6a6a74 #0a0a0c}
+.cos{background:var(--gris-fosc);margin-top:3px;padding:16px 18px;border:2px solid;border-color:#07040d #7c6aa8 #7c6aa8 #07040d}
 .finestra.tancada .cos{display:none}
 .menu{display:flex;flex-wrap:wrap;gap:2px;padding:2px 4px}
 .menu a{color:var(--text);text-decoration:none;padding:1px 8px}
@@ -21,33 +21,43 @@ a{color:#7fc4ff}
 h1{margin:0 0 4px;font-size:22px;color:#fff}
 h2{margin:0 0 8px;font-size:15px;color:var(--verd)}
 p{margin:0 0 10px}
-code{font-family:"Courier New",monospace;background:#000;color:var(--verd);padding:1px 5px}
+code{font-family:"Courier New",monospace;background:#07040d;color:#f0abfc;padding:1px 5px}
 .molla{color:var(--suau);font-size:12px}
-.aviso{color:#ffd166}
+.aviso{color:#f0abfc}
 .icones{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px}
 .icones.grans{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
 .icones a{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;color:var(--text);text-decoration:none;padding:8px 4px;font-size:12px;border:1px dotted transparent}
-.icones a:hover,.icones a:focus{background:rgba(58,110,165,.4);border-color:#7fc4ff;outline:none}
+.icones a:hover,.icones a:focus{background:rgba(139,92,246,.35);border-color:#c4b5fd;outline:none}
 .icones .gran{font-size:30px}
 .icones small{color:var(--suau)}
-.icones small.prox{color:#ffd166}
+.icones small.prox{color:#f0abfc}
 .tria{display:flex;flex-wrap:wrap;gap:16px;margin:18px 0}
-.tria a{flex:1 1 200px;display:flex;flex-direction:column;align-items:center;gap:4px;padding:22px 10px;text-decoration:none;color:var(--text);background:var(--gris);border:2px solid;border-color:#7a7a84 #0a0a0c #0a0a0c #7a7a84;box-shadow:inset -1px -1px 0 #1d1d22}
-.tria a:hover{background:var(--titol1)}
-.tria a:active{border-color:#0a0a0c #7a7a84 #7a7a84 #0a0a0c}
+.tria a{flex:1 1 200px;display:flex;flex-direction:column;align-items:center;gap:4px;padding:22px 10px;text-decoration:none;color:var(--text);background:var(--gris);border:2px solid;border-color:#8b78b8 #07040d #07040d #8b78b8;box-shadow:inset -1px -1px 0 #150d24}
+.tria a:hover{background:#4c1d95;box-shadow:0 0 14px rgba(168,85,247,.7)}
+.tria a:active{border-color:#07040d #8b78b8 #8b78b8 #07040d}
 .tria .gegant{font-size:56px;line-height:1}
 .tria strong{font-size:18px}
 .tria small{color:var(--suau)}
-.llicencia{font-size:12px;color:var(--suau);border-top:1px dotted #55555e;padding-top:10px}
+.llicencia{font-size:12px;color:var(--suau);border-top:1px dotted #4a3a70;padding-top:10px}
 .captures{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:12px}
 figure{margin:0}
-figure img{display:block;max-width:100%;border:2px solid;border-color:#0a0a0c #6a6a74 #6a6a74 #0a0a0c}
+figure img{display:block;max-width:100%;border:2px solid;border-color:#07040d #7c6aa8 #7c6aa8 #07040d}
 figcaption{font-size:12px;color:var(--suau);margin-top:4px}
 figure.buit img{display:none}
-figure.buit::before{content:"Aquí va la captura:\A" attr(data-fitxer);white-space:pre;display:flex;align-items:center;justify-content:center;text-align:center;min-height:130px;padding:10px;color:var(--suau);font:12px "Courier New",monospace;border:2px dashed #55555e;background:repeating-linear-gradient(45deg,#1c1c22,#1c1c22 8px,#202028 8px,#202028 16px)}
+figure.buit::before{content:"Aquí va la captura:\A" attr(data-fitxer);white-space:pre;display:flex;align-items:center;justify-content:center;text-align:center;min-height:130px;padding:10px;color:var(--suau);font:12px "Courier New",monospace;border:2px dashed #4a3a70;background:repeating-linear-gradient(45deg,#140d22,#140d22 8px,#1a1230 8px,#1a1230 16px)}
 .tornar{font-size:12px;margin:12px 0 0}
-.tasques{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;gap:6px;background:var(--gris);border-top:2px solid #6a6a74;padding:4px 6px;z-index:10;overflow-x:auto}
+.tasques{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;gap:6px;background:var(--gris);border-top:2px solid #7c6aa8;padding:4px 6px;z-index:10;overflow-x:auto}
 .tasques .inici{font-weight:bold}
-.tasques .rellotge{margin-left:auto;padding:3px 10px;font-size:12px;border:2px solid;border-color:#0a0a0c #6a6a74 #6a6a74 #0a0a0c}
+.tasques .rellotge{margin-left:auto;padding:3px 10px;font-size:12px;border:2px solid;border-color:#07040d #7c6aa8 #7c6aa8 #07040d}
 footer{font-size:12px;color:var(--suau);text-align:center}
 @media(max-width:560px){.cos{padding:12px}.tasques .boto{padding:3px 8px}}
+
+/* Resplendor RGB */
+@keyframes rgb{0%{background-position:0 0}100%{background-position:300% 0}}
+@keyframes llum{0%,100%{box-shadow:inset 1px 1px 0 #4a3a70,inset -1px -1px 0 #150d24,6px 6px 0 rgba(0,0,0,.45),0 0 12px rgba(168,85,247,.45)}
+50%{box-shadow:inset 1px 1px 0 #4a3a70,inset -1px -1px 0 #150d24,6px 6px 0 rgba(0,0,0,.45),0 0 18px rgba(59,130,246,.55)}}
+.finestra{animation:llum 6s ease-in-out infinite}
+.tasques{box-shadow:0 -2px 14px rgba(168,85,247,.5)}
+.menu a:hover{background:#5b21b6}
+h1{text-shadow:0 0 10px rgba(192,132,252,.7)}
+@media(prefers-reduced-motion:reduce){.barra,.finestra{animation:none}}
