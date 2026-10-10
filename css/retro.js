@@ -8,7 +8,7 @@ document.querySelectorAll('.galeria').forEach(function(g){
     var url=base+i+'.'+exts[k],im=new Image();
     im.onload=function(){
       var a=document.createElement('a');a.href=url;a.target='_blank';im.alt='Captura '+i;a.appendChild(im);
-      var f=document.createElement('figure'),c=document.createElement('figcaption');c.textContent=(peus[i-1]&&peus[i-1].length)?'Fig. '+i+' – '+peus[i-1]:'Captura '+i;
+      var f=document.createElement('figure'),c=document.createElement('figcaption');var p=peus[i-1]||'';c.textContent=p.charAt(0)==='!'?p.slice(1):(p?'Fig. '+i+' – '+p:'Captura '+i);
       f.appendChild(a);f.appendChild(c);g.appendChild(f);prova(i+1,0)};
     im.onerror=function(){prova(i,k+1)};
     im.src=url}
