@@ -52,6 +52,7 @@ figure.buit::before{content:"Aquí va la captura:\A" attr(data-fitxer);white-spa
 footer{font-size:12px;color:var(--suau);text-align:center}
 @media(max-width:560px){.cos{padding:12px}.tasques .boto{padding:3px 8px}}
 
+
 /* Resplendor RGB */
 @keyframes rgb{0%{background-position:0 0}100%{background-position:300% 0}}
 @keyframes llum{0%,100%{box-shadow:inset 1px 1px 0 #4a3a70,inset -1px -1px 0 #150d24,6px 6px 0 rgba(0,0,0,.45),0 0 12px rgba(168,85,247,.45)}
