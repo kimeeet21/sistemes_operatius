@@ -52,7 +52,6 @@ figure.buit::before{content:"Aquí va la captura:\A" attr(data-fitxer);white-spa
 footer{font-size:12px;color:var(--suau);text-align:center}
 @media(max-width:560px){.cos{padding:12px}.tasques .boto{padding:3px 8px}}
 
-
 /* Resplendor RGB */
 @keyframes rgb{0%{background-position:0 0}100%{background-position:300% 0}}
 @keyframes llum{0%,100%{box-shadow:inset 1px 1px 0 #4a3a70,inset -1px -1px 0 #150d24,6px 6px 0 rgba(0,0,0,.45),0 0 12px rgba(168,85,247,.45)}
@@ -66,3 +65,5 @@ h1{text-shadow:0 0 10px rgba(192,132,252,.7)}
 .taula{width:100%;border-collapse:collapse;margin:8px 0 12px;font-size:13px}
 .taula th,.taula td{border:1px solid #4a3a70;padding:5px 10px;text-align:left}
 .taula th{background:#241a38;color:#f0abfc}
+.pas{margin:16px 0 0;padding-top:12px;border-top:1px dotted #4a3a70}
+h3{margin:0 0 6px;font-size:14px;color:#f0abfc}
